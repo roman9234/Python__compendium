@@ -11,8 +11,8 @@ def count(start=0, step=1):
 
 
 counter = count()
-for i in range(5):
-    print(next(counter))
+# for i in range(5):
+#     print(next(counter))
 
 
 # Пример: фильтрация списка
