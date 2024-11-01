@@ -17,7 +17,7 @@ class DeliveryService:
         self.working_courier.release()
 
     def order_processing(self, count):
-        # Формируем количество потоков по числу переданных победителей
+        # Формируем количество потоков по числу поступивших заказов
         for package_number in range(1, count + 1):
             # Эмитируем задержку в потсуплении заказов
             time.sleep(1)
