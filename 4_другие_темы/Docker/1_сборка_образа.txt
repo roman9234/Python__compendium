@@ -68,18 +68,32 @@ docker run --name django_container django_app
 указываем порты
 -p "8000:8000"
 
+---- docker-compose ----
 
+docker-compose удоюнее оформить чем dockerfile.yml и конфигурация более наглядная
 
+Структура:
+-указание версии файла конфигурации
+-перечисление сервисов, которые будут запущены этим docker-compose файлом
 
+Все контейнеры запущенные в одном docker compose смогут взаимодействовать
 
+---- Команды в терминале ----
+Если в файле есть указание на build:
+docker compose build
 
+Запустить
+docker compose up
+-d запуск в режиме демона (фоновый режим)
 
+остановка
+docker compose down
 
+список запущенный контейнеров
+docker compose ps
 
-
-
-
-
+посмотреть что происходит в контейнере
+docker compose logs app
 
 
 
