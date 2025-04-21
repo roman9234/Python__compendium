@@ -74,18 +74,3 @@ an application data backup, and bare metal resurces
 - сокращение времени для появления функционала у клиента
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
