@@ -1,0 +1,2 @@
+---- Создание суперпользователя для отладки ----
+python manage.py createsuperuser --username=superuser --email=superuser@mail.ru

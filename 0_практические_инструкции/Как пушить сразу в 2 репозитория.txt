@@ -1,0 +1,14 @@
+Пуш сразу в 2 репозитория
+
+
+---- Добавление второго URL к origin
+
+git remote add origin https://github.com/roman9234/kubernetes-project
+git remote set-url --add --push origin https://gitlab.com/romanlesovoy1/kubernetes-project
+git remote set-url --add --push origin https://github.com/roman9234/kubernetes-project
+git remote -v
+
+---- Если нужно получить изменения от gitlab
+git pull https://gitlab.com/romanlesovoy1/kubernetes-project
+
+потом делаем пуш

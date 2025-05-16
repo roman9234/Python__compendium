@@ -1,0 +1,34 @@
+----
+Проверка работы Gitlab-runner
+sudo gitlab-runner list
+
+sudo chmod +x /opt/myapp/create_runner.sh
+cd /opt/myapp/ && sudo ./create_runner.sh
+
+//Создание раннера
+sudo /opt/myapp/create_runner.sh
+
+//Проверка работы Gitlab-runner
+sudo gitlab-runner list
+
+//Удаление раннера
+sudo gitlab-runner unregister --name "Vagrant Runner"
+
+
+
+
+
+# Установка GitLab Runner
+#curl -L https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.deb.sh | sudo bash
+#apt-get install -y gitlab-runner
+
+# Регистрация Runner
+sudo gitlab-runner register \
+  --non-interactive \
+  --url "https://gitlab.com/" \
+  --token "glrt-FFcA5-_WgnV9xU9_EAPN" \
+  --executor "shell" \
+  --description "Vagrant Runner" \
+
+# Запуск Runner
+sudo gitlab-runner start

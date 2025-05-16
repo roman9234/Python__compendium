@@ -1,0 +1,21 @@
+---- Создаём проект ----
+django-admin startproject logistics
+
+
+создать приложение с названием api
+python manage.py startapp api
+
+Добавляем всё в installed_apps
+
+Создаём модели
+
+Изменяем settings.py:
+
+AUTH_USER_MODEL = 'api.ApiUser'
+REST_FRAMEWORK = {...}
+
+исполняем миграции
+python manage.py makemigrations
+python manage.py migrate
+
+

@@ -1,0 +1,6 @@
+---- работа с pip-tools ----
+Устанавливаем зависимости по файлу requirements.in:
+
+pip install pip-tools
+pip-compile.exe
+pip-sync.exe
