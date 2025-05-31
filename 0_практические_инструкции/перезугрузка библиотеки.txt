@@ -1,0 +1,6 @@
+from importlib import reload
+
+# Мои библиотеки
+import utils
+from utils import json_to_pandas
+reload(utils)

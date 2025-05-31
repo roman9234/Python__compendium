@@ -1,0 +1,3 @@
+
+Посмотреть логи контейнера который свалился
+sudo docker logs django_app-app-1
